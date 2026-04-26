@@ -1,6 +1,7 @@
 import express from "express";
 import mongoose from "mongoose";
 import cors from 'cors';
+import 'dotenv/config';
 
 import { userRouter } from "./routes/user.route.js";
 import { chatRouter } from "./routes/chat.route.js";
@@ -17,7 +18,7 @@ const connectMongoDb = async () => {
 };
 
 const server = express();
-const PORT = 7000;
+const PORT = process.env.PORT || 4000;
 
 //middlewares
 server.use(cors())
@@ -32,6 +33,7 @@ server.listen(PORT, () => console.log(`Servidor corriendo en http://localhost:${
 
 server.get('/', (req, res) => res.send(`Funciona el port: ${PORT}`));
 
+connectMongoDb();
 
 // package ==> npm init -y
 

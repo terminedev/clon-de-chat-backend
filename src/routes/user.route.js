@@ -1,9 +1,7 @@
 import { Router } from 'express';
-import { createUser, deleteUser, getUsers } from '../controllers/user.controller';
+import { createUser, deleteUser, getUsers } from '../controllers/user.controller.js';
 
 const userRouter = Router();
-
-//http://localhost:7000/usuarios
 
 userRouter.post('/usuarios/crear', createUser);
 userRouter.get('/usuarios', getUsers);
