@@ -2,12 +2,19 @@ import express from "express";
 import mongoose from "mongoose";
 import cors from 'cors';
 
-import { userRouter } from "./routes/user.route";
-import { chatRouter } from "./routes/chat.route";
-import { messageRouter } from "./routes/message.route";
+import { userRouter } from "./routes/user.route.js";
+import { chatRouter } from "./routes/chat.route.js";
+import { messageRouter } from "./routes/message.route.js";
+import connectDB from "./config/connectDB.js";
 
 
-const connectMongoDb = async () => { };
+const connectMongoDb = async () => {
+    try {
+        await connectDB();
+    } catch (error) {
+        console.error(error);
+    }
+};
 
 const server = express();
 const PORT = 7000;
