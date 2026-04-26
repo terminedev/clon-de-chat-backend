@@ -24,9 +24,9 @@ const PORT = process.env.PORT || 4000;
 server.use(cors())
 server.use(express.json());
 
-server.use('/usuarios', userRouter);
+server.use('/users', userRouter);
 server.use('/chats', chatRouter);
-server.use('/mensajes', messageRouter);
+server.use('/messages', messageRouter);
 
 
 server.listen(PORT, () => console.log(`Servidor corriendo en http://localhost:${PORT}`))

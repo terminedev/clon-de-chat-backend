@@ -51,7 +51,7 @@ const deleteUser = async (req, res) => {
 
         res.status(200).json({
             success: true,
-            data: deletedUser, // o puedes enviar null si no necesitas devolver el usuario eliminado
+            data: deletedUser,
             message: "Usuario eliminado correctamente"
         });
     } catch (error) {

@@ -3,7 +3,7 @@ import { getChatHistory, sendMessage } from '../controllers/message.controller.j
 
 const messageRouter = Router();
 
-messageRouter.post('/mensajes', sendMessage);
-messageRouter.get('/mensajes', getChatHistory);
+messageRouter.post('/messages', sendMessage);
+messageRouter.get('/messages/:chatId', getChatHistory);
 
 export { messageRouter };

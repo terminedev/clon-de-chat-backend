@@ -4,7 +4,7 @@ import { createChat, getUserChats } from '../controllers/chat.controller.js';
 
 const chatRouter = Router();
 
-chatRouter.post('/chats/crear', createChat);
-chatRouter.get('/chats', getUserChats);
+chatRouter.post('/chats', createChat);
+chatRouter.get('/chats/:userId', getUserChats);
 
 export { chatRouter };
