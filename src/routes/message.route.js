@@ -1,10 +1,10 @@
 import { Router } from 'express';
 
-const userRouter = Router();
+const messageRouter = Router();
 
 //http://localhost:7000/mensajes
 
-userRouter.post('/mensajes', sendMessage);
-userRouter.get('/mensajes', getMessage);
+messageRouter.post('/mensajes', sendMessage);
+messageRouter.get('/mensajes', getMessage);
 
-export { userRouter };
+export { messageRouter };

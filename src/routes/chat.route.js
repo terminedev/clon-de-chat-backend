@@ -1,10 +1,10 @@
 import { Router } from 'express';
 
-const userRouter = Router();
+const chatRouter = Router();
 
 //http://localhost:7000/chats
 
-userRouter.post('/chats/crear', createChat);
-userRouter.get('/chats', getChats);
+chatRouter.post('/chats/crear', createChat);
+chatRouter.get('/chats', getChats);
 
-export { userRouter };
+export { chatRouter };

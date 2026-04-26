@@ -1,6 +1,27 @@
 {
   "dependencies": {
     "cors": "^2.8.6",
-    "express": "^5.2.1"
-  }
+    "express": "^5.2.1",
+    "mongoose": "^9.5.0"
+  },
+  "name": "clon-de-chat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/terminedev/clon-de-chat.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/terminedev/clon-de-chat/issues"
+  },
+  "homepage": "https://github.com/terminedev/clon-de-chat#readme"
 }
